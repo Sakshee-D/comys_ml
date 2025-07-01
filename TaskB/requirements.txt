@@ -1,6 +1,0 @@
-tensorflow >= 2.10
-numpy
-matplotlib
-scikit-learn
-PyYAML
-tqdm
