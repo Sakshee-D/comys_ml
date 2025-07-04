@@ -57,6 +57,7 @@ Comsys hackathon
     ├── test_script.py
     └── train.py
 
+
 # Task A- Gender Classification
 
  Gender Classification using MobileNetV2 Transfer Learning
