@@ -8,7 +8,7 @@ Team Member 2: Shreya Pawar
 
 # Table of Contents: 
 
-A. Introduction
+A. File Structure
 
 B. Task A - Gender Classification
 
@@ -27,6 +27,35 @@ Dependencies
 D. How to Test ( For Task A and Task B)
 
 E. Future Improvements for both Tasks
+
+# File Structure
+
+Comsys hackathon
+├── TaskA
+│   ├── models
+│   │   └── gender_model.h5
+│   ├── results
+│   ├── utils
+│   │   ├── data_utils.py
+│   │   └── model_utils.py
+│   ├── evaluate.py
+│   ├── model_architecture.... (likely .png or similar based on previous context)
+│   ├── predict_single.py
+│   ├── test.py
+│   └── train.py
+└── TaskB
+    ├── data_loader
+    │   └── dataset.py
+    ├── models
+    │   └── siamese_model.py
+    ├── utils
+    │   └── image_utils.py
+    ├── config.py
+    ├── evaluate.py
+    ├── requirements.txt
+    ├── siamese_model_dia... (likely .png based on previous context)
+    ├── test_script.py
+    └── train.py
 
 # Task A- Gender Classification
 
@@ -69,10 +98,10 @@ This approach is well-suited for scenarios with:
 
         Individual Metrics for Training :
 
-          Accuracy : 0.9528
-          Precision : 0.9162
-          Recall : 0.9458
-          F1-score : 0.9299
+          Accuracy : 95.28
+          Precision : 91.62
+          Recall : 94.58
+          F1-score : 92.99
 
         Confusion Matrix:
           [[ 368   26]
@@ -85,10 +114,10 @@ This approach is well-suited for scenarios with:
          
         Individual Metrics for Validation:
 
-          Accuracy: 0.9076
-          Precision (weighted): 0.9059
-          Recall (weighted): 0.9076
-          F1-Score (weighted): 0.9047
+          Accuracy: 90.76
+          Precision (weighted): 90.59
+          Recall (weighted): 90.76
+          F1-Score (weighted): 90.47
 
         Validation Confusion Matrix:
         [[ 77  28]
@@ -147,10 +176,10 @@ This approach is well-suited for scenarios with:
  
  1. Training Results
 
-    Accuracy: 0.8954
-    Precision: 0.9059
-    Recall: 0.8825
-    F1 Score: 0.8941
+    Accuracy: 89.54
+    Precision: 90.59
+    Recall: 88.25
+    F1 Score: 89.41
  
 2. Validation Results
  
@@ -159,10 +188,10 @@ This approach is well-suited for scenarios with:
    Rejected/Uncertain: 149
  
    Binary Match Metrics:
-   Accuracy: 0.8270
-   Precision: 1.0000
-   Recall: 0.8270
-   F1 Score: 0.9053
+   Accuracy: 82.70
+   Precision: 100.00
+   Recall: 82.70
+   F1 Score: 90.53
 
  
 # Dependencies
