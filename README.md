@@ -79,10 +79,14 @@ This approach is well-suited for scenarios with:
 # Innovation and Unique Approach
 
 1. Transfer Learning with MobileNetV2: A pre-trained MobileNetV2 model (on ImageNet) serves as a powerful feature extractor. Its layers are fine-tuned during training to adapt to the specific nuances of gender classification.
-2. Image Augmentation for Robustness: The model is trained on dynamically augmented images (e.g., flipped, rotated, brightened, zoomed, shifted) to significantly improve its ability to generalize and handle real-world variations in input data.
-3. Class Weighting for Imbalance: Class weights are computed and applied during training to mitigate the effects of potential class imbalance in the dataset, ensuring the model learns effectively from both gender categories.
-4. Early Stopping for Generalization: Training is automatically halted when validation loss stops improving over several epochs (`patience=7`), preventing overfitting and ensuring the best performing model weights are saved.
-5. Self-Contained Script: The entire training and evaluation pipeline is encapsulated within a single, monolithic Python script for straightforward execution in notebook environments like Kaggle/Colab.
+2. 
+3. Image Augmentation for Robustness: The model is trained on dynamically augmented images (e.g., flipped, rotated, brightened, zoomed, shifted) to significantly improve its ability to generalize and handle real-world variations in input data.
+4. 
+5. Class Weighting for Imbalance: Class weights are computed and applied during training to mitigate the effects of potential class imbalance in the dataset, ensuring the model learns effectively from both gender categories.
+6. 
+7. Early Stopping for Generalization: Training is automatically halted when validation loss stops improving over several epochs (`patience=7`), preventing overfitting and ensuring the best performing model weights are saved.
+8. 
+9. Self-Contained Script: The entire training and evaluation pipeline is encapsulated within a single, monolithic Python script for straightforward execution in notebook environments like Kaggle/Colab.
 
 
  Resource                         Link
@@ -195,6 +199,7 @@ This approach is well-suited for scenarios with:
         
 # Verify Train and Validation Scores
 
+
 **Step 1**: Clone the Repository
 
      git clone https://github.com/Sakshee-D/comys_ml.git
@@ -203,6 +208,7 @@ This approach is well-suited for scenarios with:
 
 **Step 2**: Download the models
 
+
 The test script for Task A - https://drive.google.com/file/d/1ViA6O32ausF0L8-xSJcnn5tNpoY-zulR/view?usp=drive_link
 
 Model Task A - https://drive.google.com/file/d/1lwIBU5b9vah0am5l9F3q_fi6EdBmbkIJ/view?usp=drive_link (download)
@@ -210,6 +216,7 @@ Model Task A - https://drive.google.com/file/d/1lwIBU5b9vah0am5l9F3q_fi6EdBmbkIJ
 The test script for Task B - https://drive.google.com/file/d/1f2GR16ehG3trHwxZv773fqmrZ6r1sc8k/view?usp=drive_link
 
 Model Task B - https://drive.google.com/file/d/1o30A96Ly4OWOIFWAOZpqrqeKdJS0TB_w/view?usp=drive_link (download)
+
 
  **Note** :
 
@@ -249,6 +256,7 @@ To install all dependencies :
  **Step 4** : Configure the paths
 
  Add train and validation datasets to check :
+ 
 
  Task A
 
@@ -264,6 +272,9 @@ MODEL_PATH_FOR_EVALUATION = '/path/to/gender_classification_model.h5' (downloade
 
 RESULTS_DIR = '/path/to/save/results'  
 
+and run the test script file
+
+
 Task B
 
  Navigate to the Task B folder:
@@ -276,7 +287,7 @@ VAL_DIR = "/kaggle/input/dataset-taskb/Task_B_dataset/val"
 
 FINAL_MODEL_PATH = "/kaggle/working/siamese_model_final.h5" (downloaded model path)
  
-
+and run the test script file
  
 # How to Test (Task A & Task B)
 
@@ -297,6 +308,8 @@ MODEL_PATH_FOR_EVALUATION = '/path/to/gender_classification_model.h5'
 
 RESULTS_DIR = '/path/to/save/results'  
 
+and run the test script file
+
 
  # Task B
 
@@ -309,6 +322,8 @@ Edit the following 2 lines in `test_script.py` in Task B folder :
 VAL_DIR = "/kaggle/input/dataset-taskb/Task_B_dataset/val"
      
 FINAL_MODEL_PATH = "/kaggle/working/siamese_model_final.h5" (downloaded model path)
+
+and run the test script file
 
 
 # Future Improvements 
