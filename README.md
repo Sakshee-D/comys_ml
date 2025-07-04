@@ -177,22 +177,22 @@ This approach is well-suited for scenarios with:
  
  1. Training Results
 
-    Accuracy: 89.54
-    Precision: 90.59
-    Recall: 88.25
-    F1 Score: 89.41
+      Accuracy: 89.54
+      Precision: 90.59
+      Recall: 88.25
+      F1 Score: 89.41
  
 2. Validation Results
  
-   Total Evaluated: 2954
-   Accepted: 2805
-   Rejected/Uncertain: 149
+    Total Evaluated: 2954
+    Accepted: 2805
+    Rejected/Uncertain: 149
  
    Binary Match Metrics:
-   Accuracy: 82.70
-   Precision: 100.00
-   Recall: 82.70
-   F1 Score: 90.53
+      Accuracy: 82.70
+      Precision: 100.00
+      Recall: 82.70
+      F1 Score: 90.53
 
  
 # Dependencies
