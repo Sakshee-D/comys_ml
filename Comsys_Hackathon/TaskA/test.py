@@ -11,17 +11,18 @@ from sklearn.utils import class_weight
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
 import math
 
-# Global Configuration 
+# Global Configuration for Evaluation Script
+# ====================== EVALUATION CONFIGURATION ====================== #
 
-BASE_DATA_PATH = '/kaggle/input/comys-hackathon5/Comys_Hackathon5/Task_A'
-TRAIN_DIR = os.path.join(BASE_DATA_PATH, 'train')
-VAL_DIR = os.path.join(BASE_DATA_PATH, 'val')
 
-# >>> IMPORTANT: enter DESIRED TEST DATA PATH HERE <<<
+TEST_DATA_PATH_FOR_EVALUATION = "/kaggle/input/comys-hackathon5/Comys_Hackathon5/Task_A/val"
 
-TEST_DATA_PATH_FOR_EVALUATION = VAL_DIR 
-# Example if We had a separate 'test' folder:
-# TEST_DATA_PATH_FOR_EVALUATION = os.path.join(BASE_DATA_PATH, 'test')
+MODEL_PATH_FOR_EVALUATION = '/path/to/gender_classification_model.h5'
+
+RESULTS_DIR = '/path/to/save/results' 
+
+# ================================================================ #
+
 
 
 IMG_HEIGHT = 128
@@ -29,8 +30,7 @@ IMG_WIDTH = 128
 BATCH_SIZE = 32
 TOTAL_EPOCHS = 20
 INITIAL_LEARNING_RATE = 1e-5
-MODEL_SAVE_PATH = '/path/to/gender_classification_model.h5'
-RESULTS_DIR = '/path/to/save/results' # Directory for saving metrics files
+
 
 
 # Utility Functions 
