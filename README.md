@@ -1,14 +1,48 @@
+
 # COMSYS Hackathon: Gender Classification & Face Verification
 
 Team Name: AlgoQueens
 
 Team Member 1: Sakshee Dhormale
+
 Team Member 2: Shreya Pawar
+
+# Project Structure
+
+     comys_ml/
+     ├── Comsys_Hackathon/
+     │   ├── TaskA/
+     │   │   ├── models/
+     │   │   │   └── gender_model.h5
+     │   │   ├── utils/
+     │   │   │   ├── data_utils.py
+     │   │   │   ├── model_utils.py
+     │   │   ├── evaluate.py
+     │   │   ├── model_architecture.png
+     │   │   ├── predict_single.py
+     │   │   ├── test.py
+     │   │   ├── train.py
+     │
+     │   ├── TaskB/
+     │   │   ├── data_loader/
+     │   │   │   └── dataset.py
+     │   │   ├── models/
+     │   │   │   └── siamese_model.py
+     │   │   ├── utils/
+     │   │   │   └── image_utils.py
+     │   │   ├── config.py
+     │   │   ├── evaluate.py
+     │   │   ├── requirements.txt
+     │   │   ├── siamese_model_diagram.png
+     │   │   ├── test_script.py
+     │   │   ├── train.py
+     │
+     ├── README.md
 
 
 # Table of Contents: 
 
-A. File Structure
+A. Introduction
 
 B. Task A - Gender Classification
 
@@ -24,39 +58,9 @@ Resources & Links,
 Evaluation & Metrics Summary, 
 Dependencies
      
-D. How to Test ( For Task A and Task B)
+D. How to Test and Verify Train and Validation Scores  ( For Task A and Task B)
 
 E. Future Improvements for both Tasks
-
-# File Structure
-'''
-Comsys hackathon
-├── TaskA
-│   ├── models
-│   │   └── gender_model.h5
-│   ├── results
-│   ├── utils
-│   │   ├── data_utils.py
-│   │   └── model_utils.py
-│   ├── evaluate.py
-│   ├── model_architecture.... (likely .png or similar based on previous context)
-│   ├── predict_single.py
-│   ├── test.py
-│   └── train.py
-└── TaskB
-    ├── data_loader
-    │   └── dataset.py
-    ├── models
-    │   └── siamese_model.py
-    ├── utils
-    │   └── image_utils.py
-    ├── config.py
-    ├── evaluate.py
-    ├── requirements.txt
-    ├── siamese_model_dia... (likely .png based on previous context)
-    ├── test_script.py
-    └── train.py
-'''
 
 # Task A- Gender Classification
 
@@ -99,10 +103,10 @@ This approach is well-suited for scenarios with:
 
         Individual Metrics for Training :
 
-          Accuracy : 95.28
-          Precision : 91.62
-          Recall : 94.58
-          F1-score : 92.99
+          Accuracy : 95.28%
+          Precision : 91.62%
+          Recall : 94.58%
+          F1-score : 92.99%
 
         Confusion Matrix:
           [[ 368   26]
@@ -115,10 +119,10 @@ This approach is well-suited for scenarios with:
          
         Individual Metrics for Validation:
 
-          Accuracy: 90.76
-          Precision (weighted): 90.59
-          Recall (weighted): 90.76
-          F1-Score (weighted): 90.47
+          Accuracy: 90.76%
+          Precision (weighted): 90.59%
+          Recall (weighted): 90.76%
+          F1-Score (weighted): 90.47%
 
         Validation Confusion Matrix:
         [[ 77  28]
@@ -129,13 +133,7 @@ This approach is well-suited for scenarios with:
 
 The following Python libraries are required to run this script:
 
- tensorflow 
- scikit-learn
- numpy
- Pillow (often an implicit dependency for image processing with TensorFlow)
 
-To install all dependencies (if running in a custom environment):
-pip install tensorflow scikit-learn numpy Pillow
 
  
 # Task B - Face Matching
@@ -177,37 +175,34 @@ This approach is well-suited for scenarios with:
  
  1. Training Results
 
-      Accuracy: 89.54
-      Precision: 90.59
-      Recall: 88.25
-      F1 Score: 89.41
+         Accuracy: 0.89.54
+         Precision: 0.90.59
+         Recall: 0.88.25
+         F1 Score: 0.89.41
  
 2. Validation Results
  
-    Total Evaluated: 2954
-    Accepted: 2805
-    Rejected/Uncertain: 149
- 
-   Binary Match Metrics:
-      Accuracy: 82.70
-      Precision: 100.00
-      Recall: 82.70
-      F1 Score: 90.53
+        Total Evaluated: 2954
+        Accepted: 2805
+        Rejected/Uncertain: 149
+      
+        Binary Match Metrics:
+        Accuracy: 82.70
+        Precision: 100.00
+        Recall: 82.70
+        F1 Score: 90.53
+     
+        
+# Verify Train and Validation Scores
 
- 
-# Dependencies
- 
-  tensorflow >= 2.10
-  scikit-learn
-   matplotlib
-   numpy
-   Tqdm
- 
-To install all dependencies:
- pip install -r requirements.txt
- 
-# How to Test (Task A & Task B)
- 
+**Step 1**: Clone the Repository
+
+     git clone https://github.com/Sakshee-D/comys_ml.git
+     
+     cd comys_ml/Comsys_Hackathon
+
+**Step 2**: Download the models
+
 The test script for Task A - https://drive.google.com/file/d/1ViA6O32ausF0L8-xSJcnn5tNpoY-zulR/view?usp=drive_link
 
 Model Task A - https://drive.google.com/file/d/1lwIBU5b9vah0am5l9F3q_fi6EdBmbkIJ/view?usp=drive_link (download)
@@ -216,9 +211,85 @@ The test script for Task B - https://drive.google.com/file/d/1f2GR16ehG3trHwxZv7
 
 Model Task B - https://drive.google.com/file/d/1o30A96Ly4OWOIFWAOZpqrqeKdJS0TB_w/view?usp=drive_link (download)
 
+ **Note** :
+
+Model weights for Task  B are not given in the github repository due to file size limits. Please download them from the above links 
+
+No other file required for test script , the code can run independently given path to model (after downloading) and dataset is provided
+
+Add the path to your dataset in the above codes
+
+download the given model for each task
+
+
+**Step 3**: Install Required Packages
+ 
+
+To install all dependencies :
+     
+     pip install tensorflow>=2.10 scikit-learn matplotlib numpy tqdm pillow
+
+
+**Dependencies**
+ 
+  tensorflow >= 2.10
+  
+  scikit-learn
+  
+   matplotlib
+   
+   numpy
+   
+   Tqdm
+
+   Pillow 
+
+ 
+
+ **Step 4** : Configure the paths
+
+ Add train and validation datasets to check :
+
+ Task A
+
+ Navigate to the Task A folder:
+
+     cd comys_ml/Comsys_Hackathon/TaskA
+
+ Edit the following 3 lines in `test_script.py` in Task A folder:
+
+TEST_DATA_PATH_FOR_EVALUATION= "/kaggle/input/comys-hackathon5/Comys_Hackathon5/Task_A/val"
+
+MODEL_PATH_FOR_EVALUATION = '/path/to/gender_classification_model.h5' (downloaded model path)
+
+RESULTS_DIR = '/path/to/save/results'  
+
+Task B
+
+ Navigate to the Task B folder:
+
+     cd comys_ml/Comsys_Hackathon/TaskB
+ 
+Edit the following 2 lines in `test_script.py` in Task B folder:
+
+VAL_DIR = "/kaggle/input/dataset-taskb/Task_B_dataset/val"
+
+FINAL_MODEL_PATH = "/kaggle/working/siamese_model_final.h5" (downloaded model path)
+ 
+
+ 
+# How to Test (Task A & Task B)
+
 
 # Task A
- Edit the following 3 lines in `test_script.py`:
+
+ Navigate to the Task A folder:
+
+     cd comys_ml/Comsys_Hackathon/TaskA
+     
+ Edit the following 3 lines in `test_script.py` in Task A folder :
+
+ Add the test dataset path in TEST_DATA_PATH_FOR_EVALUATION
 
 TEST_DATA_PATH_FOR_EVALUATION= "/kaggle/input/comys-hackathon5/Comys_Hackathon5/Task_A/val"
 
@@ -228,17 +299,16 @@ RESULTS_DIR = '/path/to/save/results'
 
 
  # Task B
-Edit the following 3 lines in `test_script.py`:
+
+ Navigate to the Task B folder:
+
+     cd comys_ml/Comsys_Hackathon/TaskB
+     
+Edit the following 2 lines in `test_script.py` in Task B folder :
 
 VAL_DIR = "/kaggle/input/dataset-taskb/Task_B_dataset/val"
+     
 FINAL_MODEL_PATH = "/kaggle/working/siamese_model_final.h5" (downloaded model path)
-
-Model weights for Task  B are not given in the github repository due to file size limits. Please download them from the above links 
-
-No other file required for test script , the code can run independently given path to model (after downloading) and dataset is provided
-
-Add the path to your dataset in the above codes
-download the given model for each task
 
 
 # Future Improvements 
