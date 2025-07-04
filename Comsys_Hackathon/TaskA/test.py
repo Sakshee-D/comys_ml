@@ -29,8 +29,8 @@ IMG_WIDTH = 128
 BATCH_SIZE = 32
 TOTAL_EPOCHS = 20
 INITIAL_LEARNING_RATE = 1e-5
-MODEL_SAVE_PATH = '/kaggle/working/gender_classification_model.h5'
-RESULTS_DIR = '/kaggle/working/results' # Directory for saving metrics files
+MODEL_SAVE_PATH = '/path/to/gender_classification_model.h5'
+RESULTS_DIR = '/path/to/save/results' # Directory for saving metrics files
 
 
 # Utility Functions 
