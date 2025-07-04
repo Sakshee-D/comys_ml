@@ -9,17 +9,23 @@ Team Member 2: Shreya Pawar
 # Table of Contents: 
 
 A. Introduction
+
 B. Task A - Gender Classification
-    Innovation and Unique Approach
-    Resources & Links
-    Evaluation & Metrics Summary
-     Dependencies
+
+Innovation and Unique Approach, 
+Resources & Links, 
+Evaluation & Metrics Summary, 
+Dependencies
+     
 C. Task B - Face Matching
-     Innovation and Unique Approach
-    Resources & Links
-    Evaluation & Metrics Summary
-     Dependencies
+
+Innovation and Unique Approach, 
+Resources & Links, 
+Evaluation & Metrics Summary, 
+Dependencies
+     
 D. How to Test ( For Task A and Task B)
+
 E. Future Improvements for both Tasks
 
 # Task A- Gender Classification
