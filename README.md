@@ -56,7 +56,7 @@ Comsys hackathon
     ├── siamese_model_dia... (likely .png based on previous context)
     ├── test_script.py
     └── train.py
-    '''
+'''
 
 # Task A- Gender Classification
 
