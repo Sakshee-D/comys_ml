@@ -3,13 +3,6 @@ import random
 import tensorflow as tf
 from utils.image_utils import preprocess  # Custom preprocessing function for images
 
-# Getting all valid image file paths from a folder
-def get_image_files(folder):
-    return [
-        os.path.join(folder, f)
-        for f in os.listdir(folder)
-        if f.lower().endswith(('.jpg', '.jpeg', '.png')) and os.path.isfile(os.path.join(folder, f))
-    ]
 
 # Generating balanced positive and negative image pairs
 def generate_balanced_pairs(data_path, max_pairs_per_identity=50):
